@@ -54,11 +54,16 @@
 /* Intro */
 
 	#intro {
-		background: url("../../images/invitations_punting_bunting.jpg"), url("../../images/invitations_punting_people.png");
+		background: url("../../images/invitations_punting_bunting.jpg"), url("../../images/invitations_punting_people_tightcrop.jpg");
 		background-size: 100%, contain;
 		background-attachment: fixed, fixed;
 		background-position: top center, bottom center;
 		background-repeat: no-repeat, no-repeat;
+	}
+	@include breakpoint('>large') {
+		#intro {
+			background-size: 1280px, contain;
+		}
 	}
 
 /* One */
