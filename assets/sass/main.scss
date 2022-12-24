@@ -3,7 +3,7 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap");
 @import url('fontawesome-all.min.css');
 
 /*
@@ -43,6 +43,7 @@
 	@import 'components/table';
 	@import 'components/poptrox-popup';
 	@import 'components/gallery';
+	@import 'components/columns';
 
 // Layout.
 
@@ -53,17 +54,17 @@
 /* Intro */
 
 	#intro {
-		background: url('images/overlay.png'), url('../../images/intro.jpg');
-		background-size: 256px 256px, cover;
+		background: url("../../images/invitations_punting_bunting.jpg"), url("../../images/invitations_punting_people.png");
+		background-size: 100%, contain;
 		background-attachment: fixed, fixed;
-		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
+		background-position: top center, bottom center;
+		background-repeat: no-repeat, no-repeat;
 	}
 
 /* One */
 
 	#one {
-		background: url('images/overlay.png'), url('../../images/one.jpg');
+		background: url('images/overlay.png'), url('../../images/punts.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -72,10 +73,10 @@
 /* Two */
 
 	#two {
-		background: url('images/overlay.png'), url('../../images/two.jpg');
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		background: url('../../images/ox-skyline.JPG');
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: top center;
 	}
 
 /* Contact */
